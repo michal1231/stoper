@@ -1,6 +1,7 @@
 import Button from "./Components/Button/Button";
 import Timer from "./Components/Timer/Timer"
 import { useState, useEffect } from 'react';
+import Container from "./Components/Container/Container";
 
 const App = () => {
   const [timeStart, setTimeStart] = useState(0);
@@ -36,12 +37,14 @@ const App = () => {
     setTimeCurrent(resetTime);
   }
   return (
-    <div>
+    <Container>
       <Timer time={deltaTime} />
-      <Button handleClick={start}>Start</Button>
-      <Button handleClick={stop}>stop</Button>
-      <Button handleClick={reset}>reset</Button>
-    </div>
+      <div>
+        <Button handleClick={start}>Start</Button>
+        <Button handleClick={stop}>stop</Button>
+        <Button handleClick={reset}>reset</Button>
+      </div>
+    </Container>
   );
 };
 
