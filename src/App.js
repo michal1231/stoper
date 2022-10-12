@@ -21,7 +21,7 @@ const App = () => {
       setTimeStart(new Date() - deltaTime);
       setTimer(setInterval(() => {
         setTimeCurrent(new Date());
-      }), 1);
+      }), 100);
     };
   }
 
