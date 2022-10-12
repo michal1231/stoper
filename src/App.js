@@ -1,7 +1,7 @@
-import Button from "./Components/Button/Button";
-import Timer from "./Components/Timer/Timer"
+import Button from "./components/Button/Button";
+import Timer from "./components/Timer/Timer"
 import { useState, useEffect } from 'react';
-import Container from "./Components/Container/Container";
+import Container from "./components/Container/Container";
 
 const App = () => {
   const [timeStart, setTimeStart] = useState(0);
